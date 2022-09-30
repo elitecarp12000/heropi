@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+section{height: 650px;
+    background: aqua;
+    }
+    .visual{
+        height: 713px;
+        background: beige;}
+    .notice{height: 254px;
+    background: violet;}
+    .banner{height: 668px;
+    background: yellowgreen;}
+    .event{height: 400px;
+    background: yellow;}
+    .a{height: 400px;
+    background: turquoise;}
+    .b{height: 695px;
+    background: tomato;}
+    .c{height: 610px;
+    background: steelblue;}
+    .d{height: 407px;
+    background: skyblue;
+    }
