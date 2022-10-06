@@ -31,8 +31,14 @@
      crossorigin="anonymous" referrerpolicy="no-referrer" />
      <link rel="shortcut icon" href="./images/logo (1).ico" type="image/x-icon">
      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-
+    <!-- 부드러운 애니메이션 스크립트 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js" ></script>
+     <script src="./js/main.js" defer></script>
      
+     <link
+     rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+   />
 </head>
 <body>
     <!-- 헤더 영역 -->
@@ -331,19 +337,206 @@
 
     <!-- 메인영역 -->
     <main>
-        <section><h2>제목1</h2></section>
-        <section class="visual"><h2>제목2</h2></section>
-        <section class="notice"><h2>제목3</h2></section>
-        <section class="banner"><h2>제목4</h2></section>
-        <section class="event"><h2>제목5</h2></section>
-        <section class="a"><h2>제목6</h2></section>
-        <section class="b"><h2>제목7</h2></section>
-        <section class="c"><h2>제목8</h2></section>
-        <section class="d"><h2>제목9</h2></section>
+       
+        <aside class="badges">
+            <a href="#" title="디저트 50% 할인">
+                <img src="./images/badge1.jpg" alt="">
+            </a>
+            <br>
+            <a href="#" title="골드 회원 가입">
+                <img src="./images/badge2.jpg" alt="">
+            </a>
+        </aside>
+        <section class="visual">
+        <div class="inner">
+       <div class="title fadein">
+        
+        <img src="./images/visual_title.png" alt="">
+        <a href="#" title="자세히보기" class="detail_btn">자세히보기</a>
+    </div>  
+        <div class="fadein">
+            <img src="./images/visual_cup1.png" alt="" class="cup1">
+            <img src="./images/visual_cup1_text.png" alt=""class="cup1_txt">
+        </div>
+        
+        <div class="fadein">
+            <img src="./images/visual_cup2.png" alt=""class="cup2">
+            <img src="./images/visual_cup2_text.png" alt=""class="cup2_txt">
+        </div>
+
+        <div class="fadein">
+            <img src="./images/visual_spoon.png" alt=""class="spoon">
+        </div>
+       </div>
+    </section>
+
+    <section class="notice">
+        <div class="n_inner">
+            <div class="n_inner_left">
+                <h2>공지사항</h2>
+                 <!-- Swiper -->
+                <div class="swiper snotice">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="javascript:void(0);" title=""> [당첨자 발표] 전자영수증 이벤트</a></div>
+                    <div class="swiper-slide"><a href="javascript:void(0);" title=""> 크리스마스 & 연말연시 매장 영업시간 변경 안내</a></div>
+                    <div class="swiper-slide"><a href="javascript:void(0);" title=""> [당첨자 발표] 커피 영수증 이벤트</a></div>
+                    <div class="swiper-slide"><a href="javascript:void(0);" title=""> 애플리케이션 버전 업데이트 안내</a></div>
+                    </div>
+                </div>
+                <i class="material-icons">add_circle</i>
+            </div>
+            <div class="n_inner_right">
+                <h2>커피 프로모션</h2>
+                <i class="material-icons toggle_btn">upload</i>
+            </div>
+        </div>
+    </section>
+
+    <section class="promotion">
+         <!-- Swiper -->
+    <div class="swiper proslide">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/promotion_slide1.jpg" alt="">
+            <a href="javascript:void(0);" title="프로모션1" class="btn">자세히보기</a></div>
+          <div class="swiper-slide"> 
+            <img src="./images/promotion_slide2.jpg" alt="">
+            <a href="javascript:void(0);" title="프로모션2" class="btn">자세히보기</a></div>
+          <div class="swiper-slide">
+             <img src="./images/promotion_slide3.jpg" alt="">
+             <a href="javascript:void(0);" title="프로모션3" class="btn">자세히보기</a></div>
+          <div class="swiper-slide">
+             <img src="./images/promotion_slide4.jpg" alt="">
+             <a href="javascript:void(0);" title="프로모션4" class="btn">자세히보기</a></div>
+          <div class="swiper-slide">
+             <img src="./images/promotion_slide5.jpg" alt="">
+             <a href="javascript:void(0);" title="프로모션5" class="btn">자세히보기</a></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev">
+            <span class="material-icons">arrow_back</span>
+        </div>
+        <div class="swiper-button-next">
+            <span class="material-icons">arrow_forward</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="reward">
+        <article class="reward_inner">
+            <div class="btn_group">
+            <a href="#" title="회원가입" class="btn join">회원가입</a>
+            <a href="#" title="로그인" class="btn login">로그인</a>
+            <a href="#" title="e-Gift 선물하기" class="btn gift">e-Gift 선물하기</a>
+            </div>
+        </article>
+    </section>
+    <section class="movie">
+        <article class="m_inner">
+            <img src="./images/floating1.png" alt="이미지1" class="m_img1">
+            <img src="./images/floating2.png" alt="이미지2" class="m_img2">
+            <img src="./images/floating3.png" alt="이미지3" class="m_img3">
+        </article>
+
+        <div class="youtube">
+            <video muted autoplay>
+                <source src="./movies/coffee.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="cover"></div>
+    </section>
+
+    <section class="season-product scroll-spy">
+        <article class="blend">
+            <img src="./images/season_product_image.png" alt="시즌제품" class="coffee01">
+            <div class="txt_group">
+            <img src="./images/season_product_text1.png" alt="제목1" class="ttitle">
+            <img src="./images/season_product_text2.png" alt="제목2" class="description">
+            <a href="#" title="" class="btn">자세히 보기</a>
+            </div>
+            
+        </article>
+        
+    </section>
+
+    <section class="reserve-coffee">
+        <div class="blend">
+            <img src="./images/reserve_logo.png" alt="" class="reserve-logo">
+            <div class="txt-group">
+                <img src="./images/reserve_text.png" alt="" class="description">
+                <div class="more">
+                    <a href="javascript:void(0)" class="btn btn--gold">자세히 보기</a>
+                </div>
+            </div>
+            <img src="./images/reserve_image.png" alt="" class="product">
+        </div>
+    </section>
+
+    <section class="pick-your-favorite">
+        <div class="blend">
+            <div class="txt-group">
+                <img src="./images/favorite_text1.png" alt="" class="ttitle">
+                <img src="./images/favorite_text2.png" alt="" class="description">
+                <div class="more">
+                    <a href="javascript:void(0)" class="btn btn--white">자세히보기</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reserve-store">
+        <div class="blend">
+
+        </div>
+    </section>
+
+    <section class="find-store">
+        <div class="blend">
+            <img src="./images/find_store_texture1.png" alt="" class="texture1">
+            <img src="./images/find_store_texture2.png" alt="" class="texture2">
+            <img src="./images/find_store_picture1.jpg" alt="" class="picture1">
+            <img src="./images/find_store_picture2.jpg" alt="" class="picture2">
+            <div class="txt-group">
+                <img src="./images/find_store_text1.png" alt="" class="ttitle">
+                <img src="./images/find_store_text2.png" alt="" class="description">
+                <div class="more">
+                    <a href="javascript:void(0)" class="btn">매장찾기</a>
+                </div>
+            </div>
+        </div>
+    </section>
     </main>
 
     <!-- 푸터영역 -->
     <footer>푸터</footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".snotice", {
+        direction: "vertical",
+        autoplay:true,
+        loop:true,
+      });
+
+      var swiper = new Swiper(".proslide", { //객체 생성 
+        slidesPerView: 3,
+        spaceBetween: 10,
+        centeredSlides:true, 
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay:true,
+        loop:true,
+        navigation: { // 슬라이드 이전/다음 버튼 사용
+    prevEl: '.promotion .swiper-button-prev', // 이전 버튼 요소
+    nextEl: '.promotion .swiper-button-next' // 다음 버튼 요소
+  }
+      });
+    </script>
     
 </body>
 </html>

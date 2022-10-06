@@ -151,7 +151,3 @@ header .header_inner {
     transform: translate(-34px,11px);
     font-size: 26px;
 }
-footer{
-    height: 430px;
-    background: #ccc;
-}
