@@ -207,7 +207,7 @@ footer .menu li::before{
     position: absolute;
     top:0;
     bottom: 0;
-    right: 0;
+    right: 0px;
     margin: auto;
 }
 footer .menu li:last-child{
