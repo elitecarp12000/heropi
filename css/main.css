@@ -308,7 +308,6 @@ background: linear-gradient(90deg, rgba(39,39,39,1) 52%, rgba(213,199,152,1) 52%
 }
 .youtube video{
     width: 100%;
-    height: 100%;
 }
 .cover{
     position: absolute;
