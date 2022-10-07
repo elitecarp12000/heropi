@@ -205,12 +205,11 @@ footer .menu li::before{
     height: 3px;
     background: #555;
     position: absolute;
-    top:0;
-    bottom: 0;
+    top:20px;
     right: 0px;
     margin: auto;
 }
-footer .menu li:last-child{
+footer .menu li:last-child::before{
     display: none;
 }
 footer .menu li a{
