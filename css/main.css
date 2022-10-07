@@ -302,7 +302,6 @@ background: linear-gradient(90deg, rgba(39,39,39,1) 52%, rgba(213,199,152,1) 52%
 
 .youtube{
     width: 1920px;
-    height: 700px;
     position: absolute;
     top:0px;left: 0px;
     z-index: 10;
